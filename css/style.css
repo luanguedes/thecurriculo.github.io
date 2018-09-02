@@ -2,12 +2,11 @@
 	margin: 0;
 	padding: 0;
 }
+*:hover{
+	text-decoration: none;
+}
 body{
 	background-image: url("Imagens/background.jpg");
-}
-@font-face{
-	font-family: work;
-	src: url(Fontes/work.ttf);
 }
 .titulo{
 	font-family: "Comic Sans MS";
@@ -39,6 +38,12 @@ h2{
 	float: left;
 	margin-left: 30px;
 }
+h4{
+	color: white;
+	font-family: "Verdana";
+	float: left;
+	margin-left: 30px;
+}
 p{
 	float: left;
 	color: white;
@@ -48,13 +53,25 @@ p{
 input{
 	border-radius: 10px 10px;
 	border: 2px solid #FF69B4;
-	height: 20px;
+	height: 25px;
 	width: 250px;
 }
 select{
 	border-radius: 10px 10px;
 	border: 2px solid #FF69B4;
 	height: 30px;
-	width: 200px;
+	width: 250px;
 	font-family: "Comic Sans MS";
+}
+.botao{
+	margin-left: 20px;
+	float: left;
+	border-radius: 50px 50px;
+	width: 80px;
+	height: 30px;
+	border: 3px solid  #FF69B4;
+	font-family: "Verdana";
+	font-weight: bolder;
+	font-size: 20px;
+	background-color: pink;
 }
