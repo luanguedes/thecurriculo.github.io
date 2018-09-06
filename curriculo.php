@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
   <title>The Curriculo</title>
   <meta charset="utf-8">
@@ -10,15 +10,10 @@
               var max_fields = 10;
               var wrapper = $(".adicionar"); 
               var wrapper2 = $(".adicionar2");
-<<<<<<< HEAD
               var wrapper3 = $(".adicionar3");
               var add_button = $(".botao1");
               var add_button2 = $(".botao2");
               var add_button3 = $(".botao3")
-=======
-              var add_button = $(".botao");
-              var add_button2 = $(".botao2");
->>>>>>> cddd58cdbc9fdc84b428866ddfa73453f3b50242
 
               var x = 1; 
               $(add_button).click(function(e) { 
@@ -27,11 +22,7 @@
 
                 if (x < max_fields) { 
                   x++; 
-<<<<<<< HEAD
-                  $(wrapper).append('<div><p>Nome: <input type="text" name="nome"></p><p>Função: <input type="text" class="textAdded" name="funcao" /></p><br><br><p>Período: <input type="date" name="exp_inicial"> à <input type="date" name="exp_final"></p><br><br><br><a href="#" class="excluir">Excluir</a></div><br><br>');
-=======
-                  $(wrapper).append('<div><p>Empresa: <input type="text" name="empresa"></p><p>Cargo: <input type="text" class="textAdded" name="cargo" /></p><br><br><p>Período (Em anos):</p><br><br><p>Inicial: <input type="text" name="inicial"></p><p>Final: <input type="text" name="final"></p><br><br><br><a href="#" class="excluir">Excluir</a></div><br><br>');
->>>>>>> cddd58cdbc9fdc84b428866ddfa73453f3b50242
+                  $(wrapper).append('<div><p>Empresa type="text" name="empresa"></p><p>Função: <input type="text" class="textAdded" name="funcao" /></p><br><br><p>Período: <input type="date" name="exp_inicial"> à <input type="date" name="exp_final"></p><br><br><br><a href="#" class="excluir">Excluir</a></div><br><br>');
                 }
               });
 
@@ -45,7 +36,6 @@
               $(add_button2).click(function(e) { 
                 e.preventDefault();
                 var length = wrapper2.find("input:text.textAdded").length;
-<<<<<<< HEAD
 
                 if (y < max_fields) { 
                   y++; 
@@ -71,16 +61,6 @@
               });
 
               $(wrapper3).on("click", ".excluir3", function(e) { 
-=======
-
-                if (y < max_fields) { 
-                  y++; 
-                  $(wrapper2).append('<div><p>Curso/Tema: <input type="text" name="curso_tema"></p><p>Instituição: <input type="text" name="instituicao"></p><br><br><p>Período (Em anos):</p><br><br><p>Inicial: <input type="text" name="inicial"></p><p>Final: <input type="text" name="final"></p><br><br><br><a href="#" class="excluir2">Excluir</a></div><br><br>');
-                }
-              });
-
-              $(wrapper2).on("click", ".excluir2", function(e) { 
->>>>>>> cddd58cdbc9fdc84b428866ddfa73453f3b50242
                 e.preventDefault();
                 $(this).parent('div').remove();
                 y--;
@@ -97,11 +77,7 @@
     <br>
     <br>
     <p>Nome: <input type="text" name="nome"></p>
-<<<<<<< HEAD
     <p>Data de Nascimento: <input type="date" name="data_nascimento"></p>
-=======
-    <p>Data de Nascimento: <input type="date" name="nome"></p>
->>>>>>> cddd58cdbc9fdc84b428866ddfa73453f3b50242
     <p>Estado Civil: <select name="estado_civil">
           <option value="Solteiro (a)">Solteiro (a)</option>
           <option value="Casado (a)">Casado (a)</option>
@@ -114,13 +90,10 @@
     <p>C.E.P: <input type="text" name="cep"></p>
     <p>Cidade: <input type="text" name="cidade"></p>
     <p>Estado: <input type="text" name="estado"></p><br><br><br>
-<<<<<<< HEAD
     <p>Celular: <input type="text" name="celular"> (Ex: (00)00000-0000)</p>
     <p>Telefone: <input type="text" name="telefone"> (Ex: (00)0000-0000)</p><br><br><br>
-=======
->>>>>>> cddd58cdbc9fdc84b428866ddfa73453f3b50242
     <p>Escolaridade: <select name="escolaridade">
-     	<option value="Ensino Fundamental">Ensino Fundamental</option>
+      <option value="Ensino Fundamental">Ensino Fundamental</option>
         <option value="Ensino Medio">Ensino Medio</option>
         <option value="Ensino Superior">Ensino Superior</option>
         <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
@@ -128,7 +101,6 @@
         <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
     </select></p><br><br><br><br>
     <div class="adicionar">
-<<<<<<< HEAD
         <h2>Experiências Profissionais:</h2>
         <button class="botao1">Adicionar Experiência</button><br><br><br>
         <div>
@@ -160,29 +132,6 @@
     <p>Data: <input type="date" name="datadoc"></p><br><br>
     <input type="submit" class="botao" value="Gerar Currículo">
     </form>
-=======
-        <h4>Experiências Profissionais:</h4>
-        <button class="botao">Adicionar Experiência</button><br><br><br>
-        <div>
-            <p>Empresa: <input type="text" name="empresa"></p>
-            <p>Cargo: <input type="text" name="cargo"></p><br><br>
-            <p>Período (Em anos):</p><br><br>
-            <p>Inicial: <input type="text" name="inicial"></p>
-            <p>Final: <input type="text" name="final"></p><br><br><br>
-        </div>
-    </div>
-    <div class="adicionar2">
-        <h4>Cursos e Eventos:</h4>
-        <button class="botao2">Adicionar Curso/Evento</button><br><br><br>
-        <div>
-            <p>Curso/Tema: <input type="text" name="curso_tema"></p>
-            <p>Instituição: <input type="text" name="instituicao"></p><br><br>
-            <p>Período (Em anos):</p><br><br>
-            <p>Inicial: <input type="text" name="inicial"></p>
-            <p>Final: <input type="text" name="final"></p><br><br><br>
-        </div>
-    </div>
->>>>>>> cddd58cdbc9fdc84b428866ddfa73453f3b50242
   </center>
 </body>
 </html>
