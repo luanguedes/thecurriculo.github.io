@@ -1,8 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;
-}
-*:hover{
 	text-decoration: none;
 }
 body{
@@ -23,7 +21,17 @@ body{
 	margin-bottom: 50px;
 	font-weight: bolder;
 }
-button{
+.botaoo{
+	margin-left: 550px;
+	border-radius: 100px 100px;
+	width: 200px;
+	height: 100px;
+	border: 8px double black;
+	font-family: "Verdana";
+	font-weight: bolder;
+	background-color: #FFC0CB;
+}
+.botao{
 	border-radius: 100px 100px;
 	width: 200px;
 	height: 100px;
@@ -33,9 +41,9 @@ button{
 	background-color: #FFC0CB;
 }
 h2{
+	float: left;
 	color: white;
 	font-family: "Verdana";
-	float: left;
 	margin-left: 30px;
 }
 h4{
@@ -63,15 +71,33 @@ select{
 	width: 250px;
 	font-family: "Comic Sans MS";
 }
-.botao{
+button{
 	margin-left: 20px;
 	float: left;
 	border-radius: 50px 50px;
-	width: 80px;
+	width: 250px;
 	height: 30px;
 	border: 3px solid  #FF69B4;
 	font-family: "Verdana";
 	font-weight: bolder;
-	font-size: 20px;
+	font-size: 15px;
 	background-color: pink;
+}
+button:hover{
+	color: red;
+	background-color: lightblue;
+}
+a{
+	float: left;
+	color: red;
+	font-size: 20px;
+	margin-left: 30px;
+}
+textarea{
+	border-radius: 10px 10px;
+	border: 2px solid #FF69B4;
+	height: 200px;
+	width: 400px;
+	float: left;	
+	margin-left: 25px;
 }
